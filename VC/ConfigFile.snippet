@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Get Config Value</Title>
+            <Author>Michael Moerz</Author>
+            <Description>Snippet for fetching a value from IConfiguration source.</Description>
+            <Shortcut>cfgval</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CSharp">
+                <![CDATA[GetValue<$ValType$>("ValPath")]]>
+            </Code>
+            <Declarations>
+                <Literal>
+                    <ID>ValType</ID>
+                    <ToolTip>Data Type of the value from the IConfiguration source.</ToolTip>
+                    <Default>string</Default>
+                </Literal>
+                <Literal>
+                    <ID>ValPath</ID>
+                    <ToolTip>Path to the value from the IConfiguration source.</ToolTip>
+                    <Default>Test:ValName</Default>
+                </Literal>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
