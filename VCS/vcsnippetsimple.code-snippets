@@ -1,0 +1,73 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope,
+	// prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the 
+	// scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables
+	// are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for
+	// placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"vcsnippetsimple" : {
+		"scope": "xml,snippet",
+		"prefix": "vcsnipsimple",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<CodeSnippets xmlns=\"http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet\">",
+			"\t<CodeSnippet Format=\"1.0.0\">",
+			"\t\t<Header>",
+			"\t\t\t<Title>${1:title}</Title>",
+			"\t\t\t<Author>Michael Moerz</Author>",
+			"\t\t\t<Description>${2:description}</Description>",
+			"\t\t</Header>",
+			"\t\t<Snippet>",
+			"\t\t\t<Code Language=\"${3:lang}\">",
+			"\t\t\t\t<![CDATA[${4:code}]]>",
+			"\t\t\t</Code>",
+			"\t\t</Snippet>",
+			"\t</CodeSnippet>",
+			"</CodeSnippets>"
+			],
+		"description": "A simple Visual Studio Code Snippet",
+	},
+	"vcsnippetcomplex" : {
+		"scope": "xml,snippet",
+		"prefix": "vcsnipcompl",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+			"<CodeSnippets xmlns=\"http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet\">",
+			"\t<CodeSnippet Format=\"1.0.0\">",
+			"\t\t<Header>",
+			"\t\t\t<Title>${1:title}</Title>",
+			"\t\t\t<Author>Michael Moerz</Author>",
+			"\t\t\t<Description>${2:description}</Description>",
+			"\t\t</Header>",
+			"\t\t<Snippet>",
+			"\t\t\t<Code Language=\"${3:lang}\">",
+			"\t\t\t\t<![CDATA[${4:code}]]>",
+			"\t\t\t</Code>",
+			"\t\t\t<Declarations>",
+			"\t\t\t\t<Literal>",
+			"\t\t\t\t\t<ID>${5:Varname}</ID>",
+			"\t\t\t\t\t<ToolTip>${6:Tooltiptext}</ToolTip>",
+			"\t\t\t\t\t<Default>${7:Defaultvalue}</Default>",
+			"\t\t\t\t</Literal>",
+		  	"\t\t\t</Declarations>",
+			"\t\t</Snippet>",
+			"\t</CodeSnippet>",
+			"</CodeSnippets>"
+			],
+		"description": "A more complex Visual Studio Code Snippet",
+	},
+}
